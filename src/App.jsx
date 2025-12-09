@@ -668,24 +668,10 @@ const MarketingCreativeGallery = () => {
   const [activeImage, setActiveImage] = useState(0);
 
   const creatives = [
-    {
-      id: 'qr-flyer',
-      title: 'QR Code Flyer',
-      description: 'Target/Up & Up branding: "Scan to Protect Your Growing Family"',
-      image: '/Flyer1.webp'
-    },
-    {
-      id: 'box-ad',
-      title: 'Box Advertisement',
-      description: 'Up & Up diaper box with integrated QR code for family protection',
-      image: '/KioskSample1.webp'
-    },
-    {
-      id: 'endcap',
-      title: 'Target Store End Cap',
-      description: '"Target Family Protection" display: Up & Up + Mutual of Omaha: Protecting Families Together',
-      image: '/KioskSample2.webp'
-    }
+    { id: 'flyer', title: 'Flyer', description: 'Up & Up protects your baby today, Mutual of Omaha protects everything tomorrow', image: '/Target-Flyer.jpg' },
+    { id: 'endcap', title: 'End Cap', description: 'In-store display showing the partnership value', image: '/Target-EndCap.png' },
+    { id: 'donate', title: 'Donate', description: 'Buy insurance, unlock partner benefits – free diapers for your family', image: '/Target-donate.jpg' },
+    { id: 'social', title: 'Social Media', description: 'Digital campaign creative for social platforms', image: '/Target-SocialMedia.png' }
   ];
 
   return (
@@ -719,7 +705,7 @@ const MarketingCreativeGallery = () => {
         <p className="text-center text-gray-600 text-xs mt-2">{creatives[activeImage].description}</p>
       </div>
 
-      <p className="text-center text-gray-500 text-[10px] mt-3">Touchpoints: Diaper packaging • Target app • In-store displays • End caps</p>
+      <p className="text-center text-gray-500 text-[10px] mt-3">When you protect your family with insurance, you unlock partner benefits including free Up & Up diapers</p>
     </div>
   );
 };
